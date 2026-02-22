@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QualityTex | Plasterer & Decorator in Southampton, Totton & Hampshire</title>
+    <meta
+      name="description"
+      content="QualityTex — professional plastering and decorating services in Southampton, Totton and Hampshire. Skim coats, re-plastering, painting, wallpapering and more. Free quotes." />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="QualityTex | Plasterer & Decorator in Southampton, Totton & Hampshire" />
+    <meta
+      property="og:description"
+      content="5-star rated plasterer and decorator in Southampton, Totton and Hampshire. Skim coats, re-plastering, painting, wallpapering and artex removal. Free, no-obligation quotes." />
+    <meta property="og:site_name" content="QualityTex" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="QualityTex | Plasterer & Decorator in Southampton, Totton & Hampshire" />
+    <meta
+      name="twitter:description"
+      content="5-star rated plasterer and decorator in Southampton, Totton and Hampshire. Skim coats, re-plastering, painting, wallpapering and artex removal. Free quotes." />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/src/assets/icons/favicon.ico" sizes="any" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS v4 browser build (swap to dist/css/styles.css for production) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #0f172a;
+        --color-primary-light: #1e293b;
+        --color-secondary: #FB8537;
+        --color-secondary-light: #fc9d5e;
+        --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      }
+    </style>
+    <style>
+      .container { max-width: 80rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+      @media (min-width: 640px) { .container { padding-left: 1.5rem; padding-right: 1.5rem; } }
+      .text-h1 { font-size: 2.5rem; line-height: 1.1; }
+      @media (min-width: 1024px) { .text-h1 { font-size: 3.5rem; } }
+      .text-h2 { font-size: 2rem; line-height: 1.2; font-weight: 700; color: #0f172a; letter-spacing: -0.03em; }
+      @media (min-width: 1024px) { .text-h2 { font-size: 2.5rem; } }
+      .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem 1.75rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; transition: all 0.2s; cursor: pointer; text-decoration: none; }
+      .btn-primary { background-color: #FB8537; color: #fff; box-shadow: 0 4px 14px rgba(251, 133, 55, 0.3); }
+      .btn-primary:hover { background-color: #fc9d5e; box-shadow: 0 6px 20px rgba(251, 133, 55, 0.4); transform: translateY(-1px); }
+      .btn-dark { background-color: #0f172a; color: #fff; }
+      .btn-dark:hover { background-color: #1e293b; transform: translateY(-1px); }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      .animate-fade-in { animation: fadeIn 0.6s ease-out both; }
+      [data-reveal] { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+      [data-reveal].revealed { opacity: 1; transform: translateY(0); }
+      @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+      .marquee-track { display: flex; gap: 1.5rem; width: max-content; animation: marquee 60s linear infinite; }
+      .marquee-track:hover { animation-play-state: paused; }
+      @media (min-width: 768px) {
+        .testimonial-fade { position: relative; }
+        .testimonial-fade::before,
+        .testimonial-fade::after { content: ''; position: absolute; top: 0; bottom: 0; width: 120px; z-index: 10; pointer-events: none; }
+        .testimonial-fade::before { left: 0; background: linear-gradient(to right, #fff7ed, transparent); }
+        .testimonial-fade::after { right: 0; background: linear-gradient(to left, #fff7ed, transparent); }
+      }
+    </style>
+  </head>
+
+  <body class="font-sans text-slate-700 antialiased" data-page="home">
+    <main class="min-h-screen">
+      <!-- ═══════════════ JSON-LD Structured Data ═══════════════ -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "QualityTex",
+          "description": "Professional plastering and decorating services in Southampton, Totton and Hampshire. Specialists in skim coats, re-plastering, artex removal, interior and exterior painting, and wallpapering. Free, no-obligation quotes.",
+          "image": "https://qualitytext.co.uk/src/assets/img/og-image.jpg",
+          "@id": "https://qualitytext.co.uk",
+          "url": "https://qualitytext.co.uk",
+          "telephone": "07947834163",
+          "email": "sara.qualitytex@gmail.com",
+          "priceRange": "££",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "30 Honeywood Cl",
+            "addressLocality": "Totton",
+            "addressRegion": "Hampshire",
+            "postalCode": "SO40 2QZ",
+            "addressCountry": "UK"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          },
+          "areaServed": ["Southampton", "Totton", "Hampshire"],
+          "serviceType": ["Plastering", "Decorating", "Painting", "Wallpapering", "Artex Removal", "Exterior Painting", "Skim Coating"]
+        }
+      </script>
+
+      <!-- ═══════════════ NAVIGATION ═══════════════ -->
+      <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-md py-5">
+        <div class="container flex items-center justify-between">
+          <!-- Logo -->
+          <a class="flex items-center group" href="/">
+            <img src="/src/assets/img/qualitytex-mark-logo.svg" alt="QualityTex" class="h-10 w-auto group-hover:scale-105 transition-transform" data-logo-full />
+            <img src="/src/assets/img/qualitytex-mark.svg" alt="QualityTex" class="h-10 w-auto group-hover:scale-105 transition-transform hidden" data-logo-mark />
+          </a>
+
+          <!-- Desktop Nav -->
+          <div class="hidden md:flex items-center gap-8">
+            <a class="text-primary hover:text-secondary font-medium text-sm" href="/">Home</a>
+            <a class="text-primary hover:text-secondary font-medium text-sm" href="/work.html">Our Work</a>
+            <a class="text-primary hover:text-secondary font-medium text-sm" href="/about.html">About</a>
+            <a class="text-primary hover:text-secondary font-medium text-sm" href="/contact.html">Contact Us</a>
+            <a href="tel:07947834163"
+              class="flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-primary-light transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+              </svg>
+              07947 834163
+            </a>
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <button class="md:hidden text-primary" data-nav-toggle aria-expanded="false" aria-label="Open navigation menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 5h16" /><path d="M4 12h16" /><path d="M4 19h16" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div class="md:hidden absolute top-full left-0 right-0 bg-white border-b border-slate-100 shadow-xl transition-all duration-300 overflow-hidden max-h-0 opacity-0"
+          data-nav-menu>
+          <div class="flex flex-col p-6 gap-4">
+            <a class="text-lg font-medium" href="/">Home</a>
+            <a class="text-lg font-medium" href="/work.html">Our Work</a>
+            <a class="text-lg font-medium" href="/about.html">About</a>
+            <a class="text-lg font-medium" href="/contact.html">Contact Us</a>
+            <a href="tel:07947834163" class="btn btn-primary w-full justify-center">Call Now</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ═══════════════ HERO ═══════════════ -->
+      <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+          <img src="/src/assets/img/hero-bg.webp" alt="" class="absolute inset-0 w-full h-full object-cover" aria-hidden="true" />
+          <div class="absolute inset-0 bg-gradient-to-br from-white/90 via-slate-50/85 to-orange-50/90"></div>
+        </div>
+        <div class="container relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6 animate-fade-in">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-white text-sm font-semibold">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21.801 10A10 10 0 1 1 17 3.335" /><path d="m9 11 3 3L22 4" />
+              </svg>
+              <span>Serving Southampton, Totton &amp; Hampshire</span>
+            </div>
+
+            <h1 class="text-h1 font-bold text-primary tracking-tight" style="font-size:4rem">
+              Professional<br />
+              <span class="text-secondary italic">Plastering</span> &amp;<br />
+              <span class="text-secondary italic">Decorating</span><br />
+              Done Right.
+            </h1>
+
+            <p class="text-lg text-slate-600 max-w-lg">
+              Your trusted local plasterer and decorator. From fresh skim coats to full room repaints, we deliver quality finishes you&#39;ll love.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 pt-2">
+              <a class="btn btn-primary" href="/contact.html">Get a Free Quote</a>
+              <a class="btn btn-dark" href="/work.html">See Our Work</a>
+            </div>
+
+            <div class="flex items-center gap-2 text-sm font-medium text-slate-500 pt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-yellow-400 fill-yellow-400" aria-hidden="true">
+                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+              </svg>
+              <span>5-Star Rated &middot; Free Estimates</span>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="animate-fade-in" style="animation-delay: 0.2s">
+            <div data-form-feedback class="hidden mb-4 p-4 bg-green-50 text-green-800 rounded-xl" aria-live="polite"></div>
+            <form action="https://formspree.io/f/xgolngrj" method="POST" data-contact-form
+              class="bg-white p-6 lg:p-8 rounded-2xl shadow-xl border border-slate-100 space-y-4">
+              <h3 class="text-2xl font-bold text-primary text-center">Get a Free Quote</h3>
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+              <div>
+                <input type="text" id="hero-name" name="name" required
+                  class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-colors text-base"
+                  placeholder="Your name *" />
+                <p data-error class="hidden text-red-500 text-xs mt-1"></p>
+              </div>
+              <div>
+                <input type="email" id="hero-email" name="email" required
+                  class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-colors text-base"
+                  placeholder="Email address *" />
+                <p data-error class="hidden text-red-500 text-xs mt-1"></p>
+              </div>
+              <div>
+                <input type="tel" id="hero-phone" name="phone" required
+                  class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-colors text-base"
+                  placeholder="Phone *" />
+              </div>
+              <div>
+                <select id="hero-service" name="service" required
+                  class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-colors text-base bg-white">
+                  <option value="">Select a service *</option>
+                  <option value="Plastering">Plastering</option>
+                  <option value="Decorating">Decorating</option>
+                  <option value="Both">Both</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div>
+                <textarea id="hero-message" name="message" rows="3"
+                  class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-colors text-base resize-y"
+                  placeholder="Tell us about your project (optional)"></textarea>
+                <p data-error class="hidden text-red-500 text-xs mt-1"></p>
+              </div>
+              <button type="submit" class="btn btn-primary w-full justify-center text-base">Send Message</button>
+              <p class="text-xs text-slate-400 text-center">Or call <a href="tel:07947834163" class="underline">07947 834163</a></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════ SERVICES ═══════════════ -->
+      <section class="py-20 bg-white" data-reveal>
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2 class="text-h2 text-primary mb-4">Our Services</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">
+              We specialise in high-quality plastering and decorating for homes and businesses across Hampshire.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Plastering -->
+            <div class="group p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg hover:border-orange-100 transition-all">
+              <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <img src="/src/assets/img/qualitytex-trowel.svg" alt="" width="36" height="36" aria-hidden="true" />
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-2">Plastering</h3>
+              <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                Skim coats, re-plastering, artex removal, patch repairs, and new-build plastering. Smooth, flawless walls every time.
+              </p>
+              <a href="/work.html" class="text-secondary font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                Learn more
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Decorating -->
+            <div class="group p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg hover:border-orange-100 transition-all">
+              <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-secondary mb-4 group-hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m14.622 17.897-10.68-2.913" />
+                  <path d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z" />
+                  <path d="M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-2">Decorating</h3>
+              <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                Interior and exterior painting, wallpapering, woodwork, and full room transformations. Tidy, professional results.
+              </p>
+              <a href="/work.html" class="text-secondary font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                Learn more
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Specialist Finishes -->
+            <div class="group p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg hover:border-orange-100 transition-all">
+              <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-secondary mb-4 group-hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                  <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-2">Specialist Finishes</h3>
+              <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                Feature walls, textured finishes, and bespoke decorative work to give your space real character and style.
+              </p>
+              <a href="/work.html" class="text-secondary font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                Learn more
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════ RECENT PROJECTS (Dark Section) ═══════════════ -->
+      <section class="py-20 bg-slate-900 text-white overflow-hidden" data-reveal>
+        <div class="container">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <div class="mb-8">
+                <h2 class="text-h2 !text-white mb-2">Recent Projects</h2>
+                <p class="text-slate-400">See the quality of our work up close.</p>
+              </div>
+              <div class="aspect-video w-full bg-slate-800 rounded-2xl flex items-center justify-center text-slate-500">
+                <span class="text-sm">Before / After image</span>
+              </div>
+              <p class="text-center text-sm text-slate-400 mt-4">
+                <span class="font-semibold text-white">Full Room Re-Plaster</span> — Slide to see the transformation
+              </p>
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-8">
+                <h3 class="text-2xl font-bold">Latest Work</h3>
+                <a href="/work.html" class="flex items-center gap-2 text-white hover:text-secondary transition-colors text-sm">
+                  View all
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <img src="/src/assets/img/qualitytex-latest-work-01.webp" alt="Recent plastering and decorating project" class="aspect-square rounded-xl object-cover w-full" />
+                <img src="/src/assets/img/qualitytex-latest-work-02.webp" alt="Recent plastering and decorating project" class="aspect-square rounded-xl object-cover w-full" />
+                <img src="/src/assets/img/qualitytex-latest-work-03.webp" alt="Recent plastering and decorating project" class="aspect-square rounded-xl object-cover w-full" />
+                <img src="/src/assets/img/qualitytex-latest-work-04.webp" alt="Recent plastering and decorating project" class="aspect-square rounded-xl object-cover w-full" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════ HOW IT WORKS ═══════════════ -->
+      <section class="py-20 bg-white" data-reveal>
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2 class="text-h2 text-primary mb-4">How It Works</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">Getting started is simple. Four easy steps to a beautifully finished space.</p>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Step 1 -->
+            <div class="text-center">
+              <div class="w-14 h-14 bg-secondary/10 text-secondary rounded-2xl flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+              <h3 class="font-bold text-primary mb-2">Get in Touch</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Call, email, or fill out our contact form to tell us about your project.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="text-center">
+              <div class="w-14 h-14 bg-secondary/10 text-secondary rounded-2xl flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+              <h3 class="font-bold text-primary mb-2">Free Quote</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">We&#39;ll visit your property, assess the work, and provide a clear, no-obligation quote.</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="text-center">
+              <div class="w-14 h-14 bg-secondary/10 text-secondary rounded-2xl flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+              <h3 class="font-bold text-primary mb-2">We Do the Work</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Our team gets to work on an agreed date. We&#39;re tidy, reliable, and always on schedule.</p>
+            </div>
+            <!-- Step 4 -->
+            <div class="text-center">
+              <div class="w-14 h-14 bg-secondary/10 text-secondary rounded-2xl flex items-center justify-center mx-auto mb-4 text-xl font-bold">4</div>
+              <h3 class="font-bold text-primary mb-2">Final Inspection</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">We walk through the finished work together. You only pay when you&#39;re completely happy.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════ TESTIMONIALS (auto-scroll marquee) ═══════════════ -->
+      <section class="py-20 bg-orange-50 overflow-hidden" data-reveal>
+        <div class="container mb-12">
+          <h2 class="text-h2 text-center">What Our Customers Say</h2>
+        </div>
+        <div class="testimonial-fade">
+        <div class="marquee-track" aria-label="Customer testimonials">
+          <!-- Card 1 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">High Quality Work</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;Another great job at my house. I believe they have decorated every room in my house. Always a pleasure to have in my house. Also professional along with a great sense of humour. Will not go to anyone else. 100% recommend them.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">August 2025</span>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">Brilliant</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;Amazing job &mdash; our house feels like new! Fantastic team, polite, helpful, efficient and great work at a good price! Highly recommend and will definitely have back again.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">November 2025</span>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">Five Star Quality</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;Excellent in every way. I cannot speak highly enough of the quality of their work, tidiness, reliability, punctuality, fair detailed, itemised pricing and courtesy. I would recommend QualityTex unreservedly.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">October 2025</span>
+          </div>
+          <!-- Card 4 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">High Quality Job Completed</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;They painted the outside of our house and were simply superb. Communication was first class from start to finish and the work was completed to a very high standard. I would have no hesitation recommending QualityTex to others.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">August 2025</span>
+          </div>
+          <!-- Card 5 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">Reliable and a First Class Job</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;They delivered a first class job. Really professional and did a superb job, were very clean and tidy and started and finished in the timelines agreed. Really friendly and could not have offered more. I would definitely recommend them.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">August 2025</span>
+          </div>
+          <!-- Card 6 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">External Painting of House &amp; Garage</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;An excellent job. Very friendly, nothing too much trouble. Always left the property clean and tidy. Have no hesitation in recommending them; in fact have passed contact details onto relatives.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">July 2025</span>
+          </div>
+          <!-- Card 7 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">Brilliant Job Repainting Our Home</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;QualityTex came highly recommended and more than exceeded our expectations. The team was punctual, friendly and hard working. Their prep and repair work was the very best standard and their advice on paint colours extremely helpful. The finished paint job was brilliant!&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">January 2025</span>
+          </div>
+          <!-- Card 8 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">Full Bungalow Repaint</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;Communicated in a timely manner, provided a detailed price and quote that clearly split the costs. The full repaint of the bungalow finished much quicker than was communicated and the quality of work was very good. Would highly recommend to anyone with decorating needs.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">February 2025</span>
+          </div>
+          <!-- Card 9 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">Decorating a Four Bedroom House</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;From start to finish a pleasure to do business with &mdash; the best decorators we have ever used by far. Communication was excellent, very good value, and their plastering, painting &amp; wallpaper hanging was beautiful. Tidy &amp; considerate workers. Overall 10/10.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">September 2024</span>
+          </div>
+          <!-- Card 10 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">Bedroom Decoration</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;QualityTex is the best decorator company that we have ever come across. Their work is beautiful, their time-keeping faultless and they are a pleasure to do business with.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">June 2024</span>
+          </div>
+          <!-- Duplicate all 10 cards for seamless loop -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col" aria-hidden="true">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">High Quality Work</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;Another great job at my house. I believe they have decorated every room in my house. Always a pleasure to have in my house. Also professional along with a great sense of humour. Will not go to anyone else. 100% recommend them.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">August 2025</span>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col" aria-hidden="true">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">Brilliant</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;Amazing job &mdash; our house feels like new! Fantastic team, polite, helpful, efficient and great work at a good price! Highly recommend and will definitely have back again.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">November 2025</span>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col" aria-hidden="true">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">Five Star Quality</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;Excellent in every way. I cannot speak highly enough of the quality of their work, tidiness, reliability, punctuality, fair detailed, itemised pricing and courtesy. I would recommend QualityTex unreservedly.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">October 2025</span>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col" aria-hidden="true">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">High Quality Job Completed</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;They painted the outside of our house and were simply superb. Communication was first class from start to finish and the work was completed to a very high standard. I would have no hesitation recommending QualityTex to others.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">August 2025</span>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col" aria-hidden="true">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">Reliable and a First Class Job</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;They delivered a first class job. Really professional and did a superb job, were very clean and tidy and started and finished in the timelines agreed. Really friendly and could not have offered more. I would definitely recommend them.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">August 2025</span>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col" aria-hidden="true">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">External Painting of House &amp; Garage</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;An excellent job. Very friendly, nothing too much trouble. Always left the property clean and tidy. Have no hesitation in recommending them; in fact have passed contact details onto relatives.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">July 2025</span>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col" aria-hidden="true">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">Brilliant Job Repainting Our Home</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;QualityTex came highly recommended and more than exceeded our expectations. The team was punctual, friendly and hard working. Their prep and repair work was the very best standard and their advice on paint colours extremely helpful. The finished paint job was brilliant!&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">January 2025</span>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col" aria-hidden="true">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">Full Bungalow Repaint</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;Communicated in a timely manner, provided a detailed price and quote that clearly split the costs. The full repaint of the bungalow finished much quicker than was communicated and the quality of work was very good. Would highly recommend to anyone with decorating needs.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">February 2025</span>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col" aria-hidden="true">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">Decorating a Four Bedroom House</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;From start to finish a pleasure to do business with &mdash; the best decorators we have ever used by far. Communication was excellent, very good value, and their plastering, painting &amp; wallpaper hanging was beautiful. Tidy &amp; considerate workers. Overall 10/10.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">September 2024</span>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-orange-100 min-w-[340px] max-w-[340px] flex flex-col" aria-hidden="true">
+            <div class="flex gap-1 mb-4 text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h4 class="font-bold text-primary mb-3">Bedroom Decoration</h4>
+            <p class="text-slate-700 italic mb-6 flex-1">&ldquo;QualityTex is the best decorator company that we have ever come across. Their work is beautiful, their time-keeping faultless and they are a pleasure to do business with.&rdquo;</p>
+            <span class="text-xs text-slate-400 mt-auto">June 2024</span>
+          </div>
+        </div>
+        </div>
+        <div class="container mt-10 flex flex-col md:flex-row items-center justify-center gap-4">
+          <p style="font-family:'Inter',sans-serif;font-weight:700;font-size:36px;color:#000000;">Check us out on:</p>
+          <a href="https://www.checkatrade.com/trades/qualitytex" target="_blank" rel="noopener noreferrer" class="inline-block w-[90%] md:w-[20%]">
+            <img src="/src/assets/img/checkatrade-logo.svg" alt="See our reviews on Checkatrade" class="w-full h-auto" />
+          </a>
+        </div>
+      </section>
+
+      <!-- ═══════════════ CTA BAND ═══════════════ -->
+      <section class="py-16 bg-secondary text-white" data-reveal>
+        <div class="container text-center">
+          <h2 class="text-3xl lg:text-4xl font-bold mb-4">Ready to Transform Your Space?</h2>
+          <p class="text-white/90 max-w-xl mx-auto mb-8">Get a free, no-obligation quote for your plastering or decorating project. We&#39;d love to help.</p>
+          <a href="/contact.html" class="btn bg-white text-secondary hover:bg-slate-50 font-bold shadow-lg">Get a Free Quote</a>
+        </div>
+      </section>
+
+      <!-- ═══════════════ FOOTER ═══════════════ -->
+      <footer class="bg-primary text-slate-300 py-16">
+        <div class="container grid md:grid-cols-3 gap-12 mb-12">
+          <!-- About -->
+          <div>
+            <img src="/src/assets/img/qualitytex-logo.svg" alt="QualityTex" class="h-10 w-auto mb-6" />
+            <p class="max-w-sm mb-6">Professional, reliable plastering and decorating services for homes and businesses across Southampton, Totton and Hampshire.</p>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="text-white font-bold mb-6">Services</h4>
+            <ul class="space-y-3">
+              <li><span class="hover:text-white transition-colors">Plastering</span></li>
+              <li><span class="hover:text-white transition-colors">Decorating</span></li>
+              <li><span class="hover:text-white transition-colors">Specialist Finishes</span></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h4 class="text-white font-bold mb-6">Contact</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="text-secondary shrink-0" aria-hidden="true">
+                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>Southampton, Totton &amp; Hampshire</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="text-secondary shrink-0" aria-hidden="true">
+                  <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                </svg>
+                <a href="tel:07947834163" class="hover:text-white transition-colors">07947 834163</a>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="text-secondary shrink-0" aria-hidden="true">
+                  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                </svg>
+                <a href="mailto:sara.qualitytex@gmail.com" class="hover:text-white transition-colors">sara.qualitytex@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container pt-8 border-t border-slate-800 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center">
+          <p>&copy; 2026 QualityTex. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Mobile Floating CTA -->
+    <div class="fixed bottom-6 right-6 z-50 md:hidden">
+      <a href="tel:07947834163"
+        class="flex items-center gap-2 bg-secondary text-white px-6 py-4 rounded-full font-bold shadow-lg hover:scale-105 transition-transform animate-fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+        </svg>
+        <span>Call Now</span>
+      </a>
+    </div>
+
+    <!-- JS (module at end of body) -->
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

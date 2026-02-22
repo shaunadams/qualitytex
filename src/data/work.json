@@ -1,0 +1,86 @@
+[
+  {
+    "id": "ws-001",
+    "title": "Full Room Re-Plaster",
+    "tags": ["Plastering"],
+    "image": "/src/assets/img/plaster-room.webp",
+    "description": "Complete strip-back and re-skim of a living room with damaged plaster. Walls left smooth and ready for decoration."
+  },
+  {
+    "id": "ws-002",
+    "title": "Artex Ceiling Removal",
+    "tags": ["Plastering"],
+    "image": "/src/assets/img/artex-ceiling-removal-qualitytex.webp",
+    "description": "Removed old artex texture from the master bedroom ceiling and applied a fresh skim coat for a clean, modern finish."
+  },
+  {
+    "id": "ws-003",
+    "title": "Kitchen Repaint",
+    "tags": ["Decorating"],
+    "image": "/src/assets/img/kitchen-repaint-qualitytex.webp",
+    "description": "Full kitchen repaint including walls, ceiling, and all woodwork. Two coats of durable eggshell for a lasting finish."
+  },
+  {
+    "id": "ws-004",
+    "title": "Hallway & Stairs Decorating",
+    "tags": ["Decorating"],
+    "image": "/src/assets/img/hallway-stairs-decorating-qualitytex.webp",
+    "description": "Wallpaper stripping, lining, and fresh paint throughout the hallway and staircase. Woodwork glossed to match."
+  },
+  {
+    "id": "ws-005",
+    "title": "Patch Plaster Repair",
+    "tags": ["Plastering"],
+    "image": "/src/assets/img/patch-plaster-repair-qualitytex.webp",
+    "description": "Repaired large areas of blown plaster in a period property bathroom, blending seamlessly with the surrounding walls."
+  },
+  {
+    "id": "ws-006",
+    "title": "Exterior Painting",
+    "tags": ["Decorating"],
+    "image": "/src/assets/img/exterior-paint.webp",
+    "description": "Full exterior repaint of a semi-detached house including fascias, soffits, and window frames. Weather-resistant masonry paint applied."
+  },
+  {
+    "id": "ws-007",
+    "title": "New Build Plaster",
+    "tags": ["Plastering"],
+    "image": "/src/assets/img/newbuild-plaster.webp",
+    "description": "First and second coat plastering throughout a new-build extension. Four rooms completed to a high standard in three days."
+  },
+  {
+    "id": "ws-008",
+    "title": "Feature Wall Wallpaper",
+    "tags": ["Decorating"],
+    "image": "/src/assets/img/feature-wall.webp",
+    "description": "Hung designer wallpaper on a living room feature wall with precise pattern matching and clean edges throughout."
+  },
+  {
+    "id": "ws-009",
+    "title": "Specialist Finishes",
+    "tags": ["Specialist Finishes"],
+    "image": "/src/assets/img/specialist-finishes-qualitytex.webp",
+    "description": "Bespoke textured finish on a feature wall with custom colour blending, creating a unique focal point for a modern living space."
+  },
+  {
+    "id": "ws-010",
+    "title": "Full House Exterior Repaint",
+    "tags": ["External Decorating"],
+    "image": "/src/assets/img/exterior-house-repaint-qualitytex.webp",
+    "description": "Complete exterior repaint of a detached property including masonry walls, fascias, soffits and guttering. Weather-resistant finish throughout."
+  },
+  {
+    "id": "ws-011",
+    "title": "Garden Wall & Fence Painting",
+    "tags": ["External Decorating"],
+    "image": "/src/assets/img/garden-wall-fence-qualitytex.webp",
+    "description": "Preparation and painting of garden boundary walls and timber fencing. Durable exterior-grade paint for a clean, long-lasting result."
+  },
+  {
+    "id": "ws-012",
+    "title": "Front Door & Window Frames",
+    "tags": ["External Decorating"],
+    "image": "/src/assets/img/front-door-windows-qualitytex.webp",
+    "description": "Sanding, priming and repainting of a front door, window frames and sills. Fresh kerb appeal with a smooth, professional finish."
+  }
+]

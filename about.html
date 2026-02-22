@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us | QualityTex — Plastering & Decorating</title>
+    <meta
+      name="description"
+      content="Meet the husband-and-wife team behind QualityTex. Family-run plastering and decorating in Southampton, Totton and Hampshire with a passion for quality craftsmanship." />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="About Us | QualityTex" />
+    <meta property="og:description" content="Meet the husband-and-wife team behind QualityTex. Family-run plasterer and decorator in Southampton, Totton and Hampshire. Quality craftsmanship you can trust." />
+    <meta property="og:site_name" content="QualityTex" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="About Us | QualityTex" />
+    <meta name="twitter:description" content="Meet the husband-and-wife team behind QualityTex. Family-run plasterer and decorator in Southampton, Totton and Hampshire. Quality craftsmanship you can trust." />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/src/assets/icons/favicon.ico" sizes="any" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS v4 browser build (swap to dist/css/styles.css for production) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #0f172a;
+        --color-primary-light: #1e293b;
+        --color-secondary: #FB8537;
+        --color-secondary-light: #fc9d5e;
+        --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      }
+    </style>
+    <style>
+      .container { max-width: 80rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+      @media (min-width: 640px) { .container { padding-left: 1.5rem; padding-right: 1.5rem; } }
+      .text-h1 { font-size: 2.5rem; line-height: 1.1; }
+      @media (min-width: 1024px) { .text-h1 { font-size: 3.5rem; } }
+      .text-h2 { font-size: 2rem; line-height: 1.2; font-weight: 700; color: #0f172a; letter-spacing: -0.03em; }
+      @media (min-width: 1024px) { .text-h2 { font-size: 2.5rem; } }
+      .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem 1.75rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; transition: all 0.2s; cursor: pointer; text-decoration: none; }
+      .btn-primary { background-color: #FB8537; color: #fff; box-shadow: 0 4px 14px rgba(251, 133, 55, 0.3); }
+      .btn-primary:hover { background-color: #fc9d5e; box-shadow: 0 6px 20px rgba(251, 133, 55, 0.4); transform: translateY(-1px); }
+      .btn-dark { background-color: #0f172a; color: #fff; }
+      .btn-dark:hover { background-color: #1e293b; transform: translateY(-1px); }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      .animate-fade-in { animation: fadeIn 0.6s ease-out both; }
+      [data-reveal] { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+      [data-reveal].revealed { opacity: 1; transform: translateY(0); }
+    </style>
+  </head>
+
+  <body class="font-sans text-slate-700 antialiased" data-page="about">
+    <main class="min-h-screen flex flex-col">
+      <!-- ═══════════════ NAVIGATION ═══════════════ -->
+      <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-md py-5">
+        <div class="container flex items-center justify-between">
+          <a class="flex items-center group" href="/">
+            <img src="/src/assets/img/qualitytex-mark-logo.svg" alt="QualityTex" class="h-10 w-auto group-hover:scale-105 transition-transform" data-logo-full />
+            <img src="/src/assets/img/qualitytex-mark.svg" alt="QualityTex" class="h-10 w-auto group-hover:scale-105 transition-transform hidden" data-logo-mark />
+          </a>
+
+          <div class="hidden md:flex items-center gap-8">
+            <a class="text-primary hover:text-secondary font-medium text-sm" href="/">Home</a>
+            <a class="text-primary hover:text-secondary font-medium text-sm" href="/work.html">Our Work</a>
+            <a class="text-primary hover:text-secondary font-medium text-sm" href="/about.html">About</a>
+            <a class="text-primary hover:text-secondary font-medium text-sm" href="/contact.html">Contact Us</a>
+            <a href="tel:07947834163"
+              class="flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-primary-light transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+              </svg>
+              07947 834163
+            </a>
+          </div>
+
+          <button class="md:hidden text-primary" data-nav-toggle aria-expanded="false" aria-label="Open navigation menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 5h16" /><path d="M4 12h16" /><path d="M4 19h16" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="md:hidden absolute top-full left-0 right-0 bg-white border-b border-slate-100 shadow-xl transition-all duration-300 overflow-hidden max-h-0 opacity-0"
+          data-nav-menu>
+          <div class="flex flex-col p-6 gap-4">
+            <a class="text-lg font-medium" href="/">Home</a>
+            <a class="text-lg font-medium" href="/work.html">Our Work</a>
+            <a class="text-lg font-medium" href="/about.html">About</a>
+            <a class="text-lg font-medium" href="/contact.html">Contact Us</a>
+            <a href="tel:07947834163" class="btn btn-primary w-full justify-center">Call Now</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ═══════════════ HERO ═══════════════ -->
+      <section class="bg-secondary text-white pt-32 pb-16">
+        <div class="container text-center">
+          <h1 class="text-h1 font-bold mb-4">About Us</h1>
+          <p class="text-xl text-white/90">The family team behind every beautiful finish.</p>
+        </div>
+      </section>
+
+      <!-- ═══════════════ ABOUT CONTENT ═══════════════ -->
+      <section class="py-20 bg-white flex-grow" data-reveal>
+        <div class="container max-w-5xl">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <!-- Image -->
+            <div class="aspect-[4/5] bg-slate-100 rounded-2xl shadow-lg flex items-center justify-center text-slate-400 text-sm">
+              Team photo coming soon
+            </div>
+
+            <!-- Copy -->
+            <div>
+              <h2 class="text-h2 mb-6">A Husband &amp; Wife Team Who Truly Care</h2>
+              <div class="space-y-5 text-slate-600 leading-relaxed text-lg">
+                <p>
+                  QualityTex isn&rsquo;t a faceless company with a call centre and a clipboard. It&rsquo;s us &mdash; a husband-and-wife team who pour our heart and soul into every wall, every ceiling, and every room we touch. We started this business because we believe your home deserves more than &ldquo;good enough.&rdquo; It deserves craftsmanship that makes you stop in the doorway and smile.
+                </p>
+                <p>
+                  Between us we bring decades of hands-on experience in plastering and decorating, but what really sets us apart is the way we work. We treat every home as if it were our own. We turn up on time, we keep things spotless, and we don&rsquo;t cut corners &mdash; ever. When we say a job is finished, we mean it&rsquo;s finished to a standard we&rsquo;d be proud to live with ourselves.
+                </p>
+                <p>
+                  Based in Totton and serving Southampton and the wider Hampshire area, we&rsquo;ve built our reputation one happy customer at a time. No flashy advertising, no gimmicks &mdash; just honest, exceptional work and the kind of personal service that only a family business can offer. From a single feature wall to a full house renovation, we give every project the same care and attention to detail.
+                </p>
+                <p class="font-semibold text-primary">
+                  We&rsquo;d love to hear about your project. Give us a call or drop us a message &mdash; the kettle&rsquo;s always on.
+                </p>
+              </div>
+              <div class="mt-8 flex flex-wrap gap-4">
+                <a href="/contact.html" class="btn btn-primary">Get a Free Quote</a>
+                <a href="tel:07947834163" class="btn btn-dark">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                  </svg>
+                  07947 834163
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════ CTA BAND ═══════════════ -->
+      <section class="py-16 bg-secondary text-white" data-reveal>
+        <div class="container text-center">
+          <h2 class="text-3xl lg:text-4xl font-bold mb-4">Ready to Transform Your Space?</h2>
+          <p class="text-white/90 max-w-xl mx-auto mb-8">Whether it&rsquo;s a quick refresh or a complete makeover, we&rsquo;d love to help. Get in touch for a free, no-obligation quote.</p>
+          <a href="/contact.html" class="btn bg-white text-secondary hover:bg-slate-50 font-bold shadow-lg">Get a Free Quote</a>
+        </div>
+      </section>
+
+      <!-- ═══════════════ FOOTER ═══════════════ -->
+      <footer class="bg-primary text-slate-300 py-16">
+        <div class="container grid md:grid-cols-3 gap-12 mb-12">
+          <div>
+            <img src="/src/assets/img/qualitytex-logo.svg" alt="QualityTex" class="h-10 w-auto mb-6" />
+            <p class="max-w-sm mb-6">Professional, reliable plastering and decorating services for homes and businesses across Southampton, Totton and Hampshire.</p>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-6">Services</h4>
+            <ul class="space-y-3">
+              <li><span class="hover:text-white transition-colors">Plastering</span></li>
+              <li><span class="hover:text-white transition-colors">Decorating</span></li>
+              <li><span class="hover:text-white transition-colors">Specialist Finishes</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-6">Contact</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="text-secondary shrink-0" aria-hidden="true">
+                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>Southampton, Totton &amp; Hampshire</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="text-secondary shrink-0" aria-hidden="true">
+                  <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                </svg>
+                <a href="tel:07947834163" class="hover:text-white transition-colors">07947 834163</a>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="text-secondary shrink-0" aria-hidden="true">
+                  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                </svg>
+                <a href="mailto:sara.qualitytex@gmail.com" class="hover:text-white transition-colors">sara.qualitytex@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container pt-8 border-t border-slate-800 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center">
+          <p>&copy; 2026 QualityTex. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Mobile Floating CTA -->
+    <div class="fixed bottom-6 right-6 z-50 md:hidden">
+      <a href="tel:07947834163"
+        class="flex items-center gap-2 bg-secondary text-white px-6 py-4 rounded-full font-bold shadow-lg hover:scale-105 transition-transform animate-fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+        </svg>
+        <span>Call Now</span>
+      </a>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

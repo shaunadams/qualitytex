@@ -1,0 +1,18 @@
+{
+  "businessName": "QualityTex",
+  "tagline": "Professional Plastering & Decorating",
+  "phone": "07947 834163",
+  "phoneHref": "tel:07947834163",
+  "email": "sara.qualitytex@gmail.com",
+  "address": {
+    "street": "30 Honeywood Cl",
+    "town": "Totton",
+    "city": "Southampton",
+    "postcode": "SO40 2QZ",
+    "country": "UK"
+  },
+  "serviceArea": "Southampton, Totton & Hampshire",
+  "hours": "Mon–Fri, 8am – 6pm",
+  "domain": "https://qualitytext.co.uk",
+  "copyright": "QualityTex"
+}
