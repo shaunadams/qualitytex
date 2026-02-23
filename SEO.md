@@ -110,7 +110,7 @@ Located in `index.html`. Type: `LocalBusiness`.
 | **Description** | Professional plastering and decorating services in Southampton, Totton and Hampshire. Specialists in skim coats, re-plastering, artex removal, interior and exterior painting, and wallpapering. Free, no-obligation quotes. |
 | **Telephone** | 07947834163 |
 | **Email** | sara.qualitytex@gmail.com |
-| **Address** | 30 Honeywood Cl, Totton, Hampshire, SO40 2QZ, UK |
+| **Address** | 30 Honeywood Close, Totton, Hampshire, SO40 2QZ, UK |
 | **Opening Hours** | Mon–Fri, 08:00–18:00 |
 | **Price Range** | ££ |
 | **Areas Served** | Southampton, Totton, Hampshire |
