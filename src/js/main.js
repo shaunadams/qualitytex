@@ -12,6 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     import("./gallery.js").then((m) => m.initGallery());
   }
 
+  if (page === "home") {
+    import("./before-after.js").then((m) => m.initBeforeAfter());
+  }
+
   if (page === "contact" || page === "home") {
     import("./form.js").then((m) => m.initForm());
   }
