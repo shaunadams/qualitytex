@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://qualitytext.co.uk/sitemap.xml
+Sitemap: https://qualitytex.co.uk/sitemap.xml
