@@ -8,8 +8,8 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
-/* Container utility */
-@utility container {
+/* ── Layout ── */
+.container {
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
@@ -18,39 +18,36 @@
 }
 
 @media (min-width: 640px) {
-  @utility container {
+  .container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 
-/* Heading sizes */
-@utility text-h1 {
+/* ── Typography ── */
+.text-h1 {
   font-size: 2.5rem;
   line-height: 1.1;
 }
 
 @media (min-width: 1024px) {
-  @utility text-h1 {
-    font-size: 3.5rem;
-  }
+  .text-h1 { font-size: 3.5rem; }
 }
 
-@utility text-h2 {
+.text-h2 {
   font-size: 2rem;
   line-height: 1.2;
   font-weight: 700;
   color: var(--color-primary);
+  letter-spacing: -0.03em;
 }
 
 @media (min-width: 1024px) {
-  @utility text-h2 {
-    font-size: 2.5rem;
-  }
+  .text-h2 { font-size: 2.5rem; }
 }
 
-/* Button components */
-@utility btn {
+/* ── Buttons ── */
+.btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -64,40 +61,155 @@
   text-decoration: none;
 }
 
-@utility btn-primary {
+.btn-primary {
   background-color: var(--color-secondary);
   color: #fff;
   box-shadow: 0 4px 14px rgba(251, 133, 55, 0.3);
 }
 
-@utility btn-primary:hover {
+.btn-primary:hover {
   background-color: var(--color-secondary-light);
   box-shadow: 0 6px 20px rgba(251, 133, 55, 0.4);
   transform: translateY(-1px);
 }
 
-@utility btn-dark {
+.btn-dark {
   background-color: var(--color-primary);
   color: #fff;
 }
 
-@utility btn-dark:hover {
+.btn-dark:hover {
   background-color: var(--color-primary-light);
   transform: translateY(-1px);
 }
 
-/* Fade-in animation */
+/* ── Animations ── */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-@utility animate-fade-in {
+.animate-fade-in {
   animation: fadeIn 0.6s ease-out both;
+}
+
+/* ── Scroll reveal ── */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Marquee / testimonial strip ── */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: marquee 60s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ── Before / After slider ── */
+.ba-slider {
+  position: relative;
+  overflow: hidden;
+  cursor: col-resize;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.ba-slider img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.ba-after { position: absolute; inset: 0; }
+
+.ba-before {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 50% 0 0);
+}
+
+.ba-handle {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.ba-handle-knob {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 40px; height: 40px;
+  transform: translate(-50%, -50%);
+  border-radius: 9999px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.ba-label {
+  position: absolute;
+  bottom: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.ba-label--before { left: 0.75rem;  background: rgba(15, 23, 42, 0.7); }
+.ba-label--after  { right: 0.75rem; background: rgba(251, 133, 55, 0.8); }
+
+/* ── Testimonial fade edges ── */
+@media (min-width: 768px) {
+  .testimonial-fade { position: relative; }
+  .testimonial-fade::before,
+  .testimonial-fade::after {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 120px;
+    z-index: 10;
+    pointer-events: none;
+  }
+  .testimonial-fade::before { left: 0;  background: linear-gradient(to right, #fff7ed, transparent); }
+  .testimonial-fade::after  { right: 0; background: linear-gradient(to left,  #fff7ed, transparent); }
+}
+
+/* ── Contact form label ── */
+[data-contact-form] label.form-label {
+  font-size: 16px;
+  display: block;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: 0.375rem;
 }

@@ -1,5 +1,6 @@
 node_modules/
-dist/
+# dist is committed — Cloudflare Workers serves static files with no build step
+!dist/
 .env
 .DS_Store
 Thumbs.db
